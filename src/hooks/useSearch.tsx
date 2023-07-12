@@ -10,19 +10,19 @@ export function useSearch() {
       isFirstInput.current = search === ""
       return
     }
-    // no se puede buscar una pelicula basia
+    // no se puede buscar una película vacía
     if (search === "") {
-      setError("No se puede buscar una pelicula basia")
+      setError("No se puede buscar una película vacía")
       return
     }
-    // no se puede buscar una pelicual con menos de 3 caracteres
+    // no se puede buscar una película con menos de 3 caracteres
     if (search.length < 3) {
-      setError("No se puede buscar una pelicula con menos de 3 caracteres")
+      setError("No se puede buscar una película con menos de 3 caracteres")
       return
     }
-    // no se puede buscar una pelicula con solo numero
+    // no se puede buscar una película con solo numero
     if (search.match(/^\d+$/)) {
-      setError("No se puede buscar una pelicula con solo numero")
+      setError("No se puede buscar una película con solo numero")
       return
     }
     setError(null)
