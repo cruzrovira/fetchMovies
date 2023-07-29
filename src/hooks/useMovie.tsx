@@ -1,8 +1,9 @@
 import { useRef, useState } from "react"
 import { searchMovies } from "../services/movies"
+import { movieType } from "../types/movie"
 
 export function useMovie({ search }: { search: string }) {
-  const [movies, setMovies] = useState()
+  const [movies, setMovies] = useState<movieType[]>()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>()
   const previusSearch = useRef(search)
