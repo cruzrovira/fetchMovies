@@ -1,6 +1,6 @@
 # buscador de películas , utilizando api omdbapi
 
-¡Bienvenido al proyecto Buscador de películas desarrollado con React y Chakra-UI! Este proyecto es parte de [Curso de react.js desde cero y con proyectos](https://github.com/midudev/aprendiendo-react). A continuación, encontrarás información sobre el proyecto, cómo configurarlo y dónde puedes ver el demo en línea.
+¡Bienvenido al proyecto Buscador de películas desarrollado con React y Chakra-UI! Este proyecto es parte de [Curso de react.js desde cero y con proyectos por @midudev](https://github.com/midudev/aprendiendo-react). A continuación, encontrarás información sobre el proyecto, cómo configurarlo y dónde puedes ver el demo en línea.
 
 ## Descripción del Proyecto
 
@@ -40,4 +40,4 @@ Esto abrirá la aplicación en tu navegador predeterminado. Ahora podrás ver y 
 
 ## Demo en Línea
 
-También puedes acceder al demo en línea del proyecto "Buscador de películas " a través de la siguiente dirección web: [Demo del Proyecto](https://64c541c7d37abc0719131295--chic-biscotti-a77b20.netlify.app/)
+También puedes acceder al demo en línea del proyecto "Buscador de películas " a través de la siguiente dirección web: [Demo del Proyecto](https://64c546dfd37abc0a3113130d--gleaming-klepon-20e166.netlify.app/)
