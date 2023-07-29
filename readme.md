@@ -1,3 +1,47 @@
-# buscador de películas
+
 
 esta aplicación se utiliza utilizando omdbapi
+
+# buscador de películas
+
+¡Bienvenido al proyecto Buscador de peliculas desarrollado con React y Chakra-UI! Este proyecto es parte de [Curso de react.js desde cero y con poryectos](https://github.com/midudev/aprendiendo-react). A continuación, encontrarás información sobre el proyecto, cómo configurarlo y dónde puedes ver el demo en línea.
+
+## Descripción del Proyecto
+
+El objetivo de este proyecto es crear una aplicación web llamada Buscador de peliculas utilizando React . La aplicación tiene como finalidad ofrecer a nuestro público una forma de buscar peliculas  de todos los timepos , la  interfaz de usuario será moderna, intuitiva y receptiva, y se enfocará en la reutilización de componentes.
+
+## Características del Proyecto
+
+- Interfaz de usuario amigable y atractiva para gestionar de peliculas .
+- Uso de componentes funcionales de React para una arquitectura limpia y mantenible.
+- Aplicación responsive que se adapta a diferentes tamaños de pantalla, facilitando su uso en dispositivos móviles.
+
+## Cómo Configurar el Proyecto
+
+Si deseas probar el proyecto de forma local en tu máquina, sigue estos pasos:
+
+1. Clona el repositorio desde GitHub:
+
+```
+git clone git@github.com:cruzrovira/fetchMovies.git
+```
+
+2. Instala las dependencias necesarias utilizando npm o yarn:
+
+```
+cd fetchMovies
+npm install
+```
+
+3. Inicia el servidor de desarrollo:
+
+```
+cd  fetchMovies
+npm run dev
+```
+
+Esto abrirá la aplicación en tu navegador predeterminado. Ahora podrás ver y probar la aplicación en tu entorno local.
+
+## Demo en Línea
+
+También puedes acceder al demo en línea del proyecto "Buscador de peliculas " a través de la siguiente dirección web: [Demo del Proyecto](https://64c541c7d37abc0719131295--chic-biscotti-a77b20.netlify.app/)****
