@@ -1,8 +1,8 @@
 
 
-esta aplicación se utiliza utilizando omdbapi
 
-# buscador de películas
+
+# buscador de películas , utilizando api omdbapi
 
 ¡Bienvenido al proyecto Buscador de peliculas desarrollado con React y Chakra-UI! Este proyecto es parte de [Curso de react.js desde cero y con poryectos](https://github.com/midudev/aprendiendo-react). A continuación, encontrarás información sobre el proyecto, cómo configurarlo y dónde puedes ver el demo en línea.
 
