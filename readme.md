@@ -44,4 +44,4 @@ Esto abrirá la aplicación en tu navegador predeterminado. Ahora podrás ver y 
 
 ## Demo en Línea
 
-También puedes acceder al demo en línea del proyecto "Buscador de peliculas " a través de la siguiente dirección web: [Demo del Proyecto](https://64c541c7d37abc0719131295--chic-biscotti-a77b20.netlify.app/)****
+También puedes acceder al demo en línea del proyecto "Buscador de peliculas " a través de la siguiente dirección web: [Demo del Proyecto](https://64c541c7d37abc0719131295--chic-biscotti-a77b20.netlify.app/)
