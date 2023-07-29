@@ -1,4 +1,12 @@
-import { Box, Button, Container, Heading, Input, Stack } from "@chakra-ui/react"
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  Input,
+  Spinner,
+  Stack,
+} from "@chakra-ui/react"
 import React, { ChangeEvent } from "react"
 
 import { Movies } from "./components/Movies"
@@ -18,48 +26,63 @@ const App: React.FC = () => {
     e.preventDefault()
     getMovies()
   }
+  const handleKeyUpCapture = (e: React.KeyboardEvent) => {
+    e.preventDefault()
+    if (e.key === "Enter") {
+      getMovies()
+    }
+  }
 
   return (
-    <Container w="100%" maxW={"800px"}>
-      <Box as="header" w={{ base: "100%", md: "400px" }} mx={"auto"}>
-        <Heading as="h1" textAlign={"center"}>
-          Movie Search Engine
-        </Heading>
-        <Stack
-          direction={{ base: "column", md: "row" }}
-          align={"center"}
-          as="form"
-          onSubmit={handleSubmit}
-        >
-          <Input
-            w={{ base: "100%", md: "70%" }}
-            name="search"
-            value={search}
-            onChange={handleChange}
-          />
-          <Button type="submit" w={{ base: "100%", md: "30%" }}>
-            Search
-          </Button>
-        </Stack>
-        <Box
-          as="p"
-          color={"red.500"}
-          fontSize={"sm"}
-          textAlign={"center"}
-          mt={2}
-          h={"21px"}
-        >
-          {error ? error : null}
-        </Box>
+    <>
+      <Box bg={"teal.500"}>
+        <Container maxW={"container.xl"}>
+          <Stack
+            as="header"
+            justifyContent={"center"}
+            alignItems={"center"}
+            p={2}
+            spacing={4}
+          >
+            <Heading as="h1" textAlign={"center"} color={"white"}>
+              Movie Search Engine
+            </Heading>
+            <Stack
+              direction={{ base: "column", md: "row" }}
+              align={"center"}
+              as="form"
+              onSubmit={handleSubmit}
+              w="100%"
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              <Input
+                w={{ base: "100%", md: "auto" }}
+                name="search"
+                value={search}
+                onChange={handleChange}
+                onKeyUpCapture={handleKeyUpCapture}
+              />
+              <Button type="submit" w={{ base: "100%", md: "auto" }}>
+                Search
+              </Button>
+            </Stack>
+            <Box as="p" color={"white"} textAlign={"center"} fontSize={20}>
+              {error ? error : null}
+            </Box>
+          </Stack>
+        </Container>
       </Box>
-      {loading ? (
-        <Box as="p" textAlign={"center"}>
-          Loading...
-        </Box>
-      ) : (
-        <Movies movies={movies} />
-      )}
-    </Container>
+      <Container w="100%" maxW={"container.xl"} py={6}>
+        {loading ? (
+          <Stack justifyContent={"center"} align={"center"}>
+            <Spinner size={"xl"} />
+          </Stack>
+        ) : (
+          <Movies movies={movies} />
+        )}
+      </Container>
+    </>
   )
 }
 

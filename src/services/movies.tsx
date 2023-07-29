@@ -9,8 +9,8 @@ export async function searchMovies({ search }: { search: string }) {
       `http://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`
     )
     const json = await response.json()
-    const moviesResoult = json?.Search
-    const movies: movieType[] = moviesResoult?.map(movie => {
+    const moviesResult = json?.Search
+    const movies: movieType[] = moviesResult?.map(movie => {
       return {
         id: movie.imdbID,
         title: movie.Title,
